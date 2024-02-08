@@ -1,4 +1,3 @@
-import { Routes, Route, Link } from "react-router-dom"
 import { useState } from "react"
 
 export default function Pick() {
@@ -22,9 +21,9 @@ export default function Pick() {
 
             {color ===  "#000000" ?
                 <div>
-                <p>Choose a color:</p>
+                <p>Pick a color:</p>
                 <input type="color" id="pick-color" name="picked-color" value={color} onChange={handleColor}/>
-                <input type="submit"></input>
+                {/* <input type="submit"></input> */}
                 </div> : 
                 <div className="mystery-color"><h1>You picked {color}</h1></div>}
         </div>

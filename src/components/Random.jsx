@@ -1,4 +1,3 @@
-import { Routes, Route, Link } from "react-router-dom"
 import { useState, useEffect} from "react"
 
 export default function Random() {
@@ -8,13 +7,11 @@ export default function Random() {
     function randomColor(){
 
         let randomColor = Math.floor(Math.random()*16777215).toString(16); //from https://css-tricks.com/snippets/javascript/random-hex-color/;
-
         setColor(`#${randomColor}`);
     }
 
     useEffect(() => {
         randomColor();
-        
     }, [])
 
     let backgroundColor = color !== "#000000" ? {backgroundColor: color } : {};
