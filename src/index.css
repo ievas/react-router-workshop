@@ -46,5 +46,20 @@ body > div {
 }
 
 .home {
-  background-color: mistyrose;
+  background-color: rgb(148, 235, 187);
+  color: white;
+}
+
+input {
+  margin: 10px;
+  padding: 2px;
+}
+
+input[type="color" i] {
+  /* border-radius: 50%; */
+  inline-size: 50px;
+  block-size: 50px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(153, 153, 153);
 }
